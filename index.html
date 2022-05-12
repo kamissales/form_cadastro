@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+
+
+        <h2>Crie uma conta</h2>
+        <form>
+            <div class="dados">
+                <label> Seu nome <br>
+                    <input type=" text" name="nome" id="nome" placeholder="Insira seu Nome">
+                </label>
+            </div>
+
+            <div class="dados">
+                <label> Seu e-mail <br>
+                    <input type=" text" name="nome" id="nome" placeholder="Insira seu e-mail" required="required">
+                </label>
+            </div>
+
+            <div class="sexo">
+
+                <input name="genero" value="M" type="radio">Masculino
+                <input name="genero" value="F" type="radio">Feminino
+
+            </div>
+
+            <div class="datanasc">
+                <label>Data de Nasciemnto</label><br>
+                <input id="data" type="date">
+
+            </div>
+
+            <input value="1" type="checkbox" required="required">Eu aceito os termos e condições
+
+            <div>
+                <input type="submit" value="Criar conta">
+
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
