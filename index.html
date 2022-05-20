@@ -1,51 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form login</title>
     <link rel="stylesheet" href="style.css">
+    <title>Form login</title>
+
 </head>
 
 <body>
     <main class="container">
 
+        <form name="formCadastro" action="">
 
-        <h2>Crie uma conta</h2>
-        <form>
-            <div class="dados">
-                <label> Seu nome <br>
-                    <input type=" text" name="nome" id="nome" placeholder="Insira seu Nome">
+            <!--Input nome-->
+            <div class="input-field">
+
+                <label for="nome">
+                    <span>Nome</span>
+                    <input type="nome" name="nome" id="nome" placeholder="insira seu Nome">
+                </label>
+
+            </div>
+
+            <!--Input email-->
+            <div class="input-field">
+                <label for="email">
+                    <span>E-mail</span>
+                    <input type="email" name="email" id="email" placeholder="insira seu e-mail" required="required">
                 </label>
             </div>
 
-            <div class="dados">
-                <label> Seu e-mail <br>
-                    <input type=" text" name="nome" id="nome" placeholder="Insira seu e-mail" required="required">
-                </label>
-            </div>
 
-            <div class="sexo">
+            <!--Input genero-->
 
-                <input name="genero" value="M" type="radio">Masculino
-                <input name="genero" value="F" type="radio">Feminino
+            <div class="input-field">
+                <label for="genero">Genero</label>
 
-            </div>
+                <div class="genero">
+                    <input name="genero" value="F" type="radio">Feminino
+                    <input name="genero" value="M" type="radio">Masculino
+                </div>
 
-            <div class="datanasc">
-                <label>Data de Nasciemnto</label><br>
-                <input id="data" type="date">
 
             </div>
 
-            <input value="1" type="checkbox" required="required">Eu aceito os termos e condições
+            <div class="input-field">
+                <label for="data">Data de nascimento</label>
+                <input name="data" id="data" type="date">
+            </div>
 
-            <div>
+            <div class="input-field">
+                <label for="password">Senha</label>
+                <div class="password">
+                    <input type="password" name="password" id="password">
+                </div>
+            </div>
+
+            <div class="terms">
+                <input value="1" type="checkbox" required="required"> Eu aceito os termos e condições
+            </div>
+
+            <div class="creat">
                 <input type="submit" value="Criar conta">
-
             </div>
+
+
         </form>
     </main>
 </body>
