@@ -50,6 +50,20 @@ main.container {
     margin-bottom: 20px;
 }
 
+.input-field input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+
+    padding: 0 1rem;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #581d8b;
+    border-radius: 4px;
+    color: #334b5f;
+    margin-bottom: 2px;
+}
 
 
 
