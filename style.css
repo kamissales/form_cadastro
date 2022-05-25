@@ -25,7 +25,7 @@ body {
     align-items: center;
     /*alinhando os itens justificado centralizado*/
     justify-content: center;
-/*Intensidade da fonte*/
+    /*Intensidade da fonte*/
     font-weight: 500;
 
     /*Cor da fonte*/
@@ -39,14 +39,14 @@ main.container {
     min-height: 65vh;
 
 
-    
+
     padding: 3rem;
     border-radius: 8px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.input-field label{
-    display:block;
+.input-field label {
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -65,5 +65,55 @@ input[type="password"] {
     margin-bottom: 2px;
 }
 
+.input-field input[type="date"] {
+    color: #C1C1C1;
+}
 
 
+.input-field input::placeholder {
+
+    color: #c1c1c1;
+    font-size: 14px;
+}
+
+.input-field .radio-btn {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.input-field .radio-btn label {
+    background-color: white;
+    width: 120px;
+    position: relative;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input-field .radio-btn label span {
+    margin-bottom: 0;
+    font-weight: 400;
+    margin-right: 10px;
+
+}
+
+.input-field .radio-btn label:first-child {
+    margin-right: 25px;
+
+}
+
+.input-field .radio-btn label .mark {
+    background-color: #581d8b;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #C1C1C1;
+    transition: .3s;
+    margin-left: 10px;
+
+}

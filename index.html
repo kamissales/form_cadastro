@@ -33,9 +33,6 @@
                 </label>
             </div>
 
-
-
-
             <div class="input-field">
                 <label for="password">
                     <span>Senha</span>
@@ -47,13 +44,25 @@
             <!--Input genero-->
 
             <div class="input-field">
-                <label for="genero">Genero</label>
 
-                <div class="genero">
-                    <input name="genero" value="F" type="radio">Feminino
-                    <input name="genero" value="M" type="radio">Masculino
+                <label for="genero">Genero</label>
+                <div class="radio-btn">
+                    <label for="feminino">
+                        <input name="genero" id="feminino" value="F" type="radio">
+                        <span class="mark"></span>
+                        <span class="btn-border"></span>
+                        <span>Feminino</span>
+                    </label>
+
+                    <label for="masculino">
+                        <input name="genero" value="M" type="radio">
+                        <span class="mark"></span>
+                        <span class="btn-border"></span>
+                        <span>Masculino</span>
+                    </label>
                 </div>
 
+            </div>
 
             </div>
             <div class="input-field">
@@ -61,16 +70,11 @@
                 <input name="data" id="data" type="date">
             </div>
 
-
-
             <div class="terms">
                 <input value="1" type="checkbox" required="required"> Eu aceito os termos e condições
             </div>
 
-            <div class="creat">
-                <input type="submit" value="Criar conta">
-            </div>
-
+            <input type="submit" value="Criar conta">
 
         </form>
     </main>
