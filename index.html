@@ -9,43 +9,30 @@
     <title>Form Cadastro</title>
 
 </head>
-
 <body>
-    <main class="container">
-
-        <form name="formCadastro" action="">
-
+    <main class="container">      
             <!--Input nome-->
             <div class="input-field">
-
-                <label for="nome">
-                    <span>Nome</span>
+                <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="insira seu Nome">
-                </label>
-
             </div>
 
             <!--Input email-->
             <div class="input-field">
-                <label for="email">
-                    <span>E-mail</span>
+                <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="insira seu e-mail" required="required">
-                </label>
             </div>
 
             <div class="input-field">
-                <label for="password">
-                    <span>Senha</span>
+                <label for="password">Senha</label>
                     <div class="password">
                         <input type="password" name="password" id="password">
                     </div>
-                </label>
             </div>
             <!--Input genero-->
 
             <div class="input-field">
-
-                <label for="genero">Genero</label>
+                <label for="genero">Gênero</label>
                 <div class="radio-btn">
                     <label for="feminino">
                         <input name="genero" id="feminino" value="F" type="radio">
@@ -55,7 +42,7 @@
                     </label>
 
                     <label for="masculino">
-                        <input name="genero" value="M" type="radio">
+                        <input type="radio" name="genero" id="masculino" value="M" >
                         <span class="mark"></span>
                         <span class="btn-border"></span>
                         <span>Masculino</span>
@@ -64,7 +51,7 @@
 
             </div>
 
-            </div>
+
             <div class="input-field">
                 <label for="data">Data de nascimento</label>
                 <input name="data" id="data" type="date">
