@@ -85,7 +85,7 @@ input[type="date"], input[type="password"]{
 }
 
 .input-field .radio-btn label:first-child {
-    margin-right: 25px;
+    margin-right: 40px;
 }
 
 .input-field .radio-btn label .mark {

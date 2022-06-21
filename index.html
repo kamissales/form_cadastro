@@ -6,62 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Form Cadastro</title>
+    <title>Formulário de Cadastro</title>
 
 </head>
+
 <body>
-    <main class="container">      
-            <!--Input nome-->
-            <div class="input-field">
-                <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="insira seu Nome">
+    <main class="container">
+        <!--Input nome-->
+        <div class="input-field">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="insira seu Nome">
+        </div>
+
+        <!--Input email-->
+        <div class="input-field">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="insira seu e-mail">
+        </div>
+        <!--Input senha-->
+        <div class="input-field">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required="required">
+        </div>
+
+        <div class="input-field">
+            <label for="confimaSenha">Confirmar Senha</label>
+            <input type="password" name="confimaSenha" id="confimaSenha" required="required">
+        </div>
+
+        <!--Input genero-->
+
+        <div class="input-field">
+            <label for="genero">Gênero</label>
+            <div class="radio-btn">
+                <label for="feminino">
+                    <input name="genero" id="feminino" value="F" type="radio">
+                    <span class="mark"></span>
+                    <span class="btn-border"></span>
+                    <span style="font-size: 12px;">Feminino</span>
+                </label>
+
+                <label for="masculino">
+                    <input type="radio" name="genero" id="masculino" value="M">
+                    <span class="mark"></span>
+                    <span class="btn-border"></span>
+                    <span style="font-size: 12px;">Masculino</span>
+                </label>
             </div>
 
-            <!--Input email-->
-            <div class="input-field">
-                <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="insira seu e-mail" required="required">
-            </div>
-
-            <div class="input-field">
-                <label for="password">Senha</label>
-                    <div class="password">
-                        <input type="password" name="password" id="password">
-                    </div>
-            </div>
-            <!--Input genero-->
-
-            <div class="input-field">
-                <label for="genero">Gênero</label>
-                <div class="radio-btn">
-                    <label for="feminino">
-                        <input name="genero" id="feminino" value="F" type="radio">
-                        <span class="mark"></span>
-                        <span class="btn-border"></span>
-                        <span>Feminino</span>
-                    </label>
-
-                    <label for="masculino">
-                        <input type="radio" name="genero" id="masculino" value="M" >
-                        <span class="mark"></span>
-                        <span class="btn-border"></span>
-                        <span>Masculino</span>
-                    </label>
-                </div>
-
-            </div>
+        </div>
 
 
-            <div class="input-field">
-                <label for="data">Data de nascimento</label>
-                <input name="data" id="data" type="date">
-            </div>
+        <div class="input-field">
+            <label for="data">Data de nascimento</label>
+            <input name="data" id="data" type="date">
+        </div>
 
-            <div class="terms">
-                <input value="1" type="checkbox" required="required"> Eu aceito os termos e condições
-            </div>
+        <div class="terms">
+            <input value="1" type="checkbox" required="required"> Eu aceito os termos e condições
+        </div>
 
-            <input type="submit" value="Criar conta">
+        <input type="submit" value="Criar conta">
 
         </form>
     </main>
